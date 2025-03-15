@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    minmax(16px, 1fr) /* minimum padding = 30px */
+    minmax(auto, 1000px)
+    minmax(16px, 1fr); /* minimum padding = 30px */
+  grid-template-areas: ". center .";
+}
+
+article {
+  grid-area: center;
+}
+
+.title {
+  margin-top: 350px;
+  margin-bottom: 200px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+}
+
+h1 {
+  /* Cancel the default <h1> decoration */
+  margin: 0;
+  font-size: unset;
+  font-weight: unset;
+
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 700;
+
+  margin-bottom: 40px;
+}
+
+h2 {
+  /* Cancel the default <h1> decoration */
+  margin: 0;
+  font-size: unset;
+  font-weight: unset;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+}
