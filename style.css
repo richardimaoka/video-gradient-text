@@ -20,25 +20,51 @@ h1 {
   font-weight: 700;
 
   text-align: center;
+}
 
-  background: linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+.pattern1 {
+  background: linear-gradient(
+    90deg,
+    #54d0ff,
+    #9f92ff 20%,
+    #ff7689 60%,
+    #54d0ff 100%
+  );
+
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  background-size: 200% 200%;
+  animation: gradient1 5s ease infinite;
 }
 
-h2 {
-  /* Cancel the default <h1> decoration */
-  margin: 0;
-  font-size: unset;
-  font-weight: unset;
-
-  font-size: 2rem;
-  font-weight: 700;
-
-  margin-bottom: 20px;
+@keyframes gradient1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
 }
 
-p {
-  font-weight: 700;
-  color: rgb(119, 119, 119);
+.pattern2 {
+  background: linear-gradient(90deg, #54d0ff, #9f92ff 20%, #ff7689 60%);
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 400% 400%;
+  animation: gradient2 5s ease infinite;
+}
+
+@keyframes gradient2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
