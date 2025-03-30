@@ -2,41 +2,28 @@ body {
   margin: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns:
-    minmax(16px, 1fr) /* minimum padding = 30px */
-    minmax(auto, 1000px)
-    minmax(16px, 1fr); /* minimum padding = 30px */
-  grid-template-areas: ". center .";
-}
-
-article {
-  grid-area: center;
-}
-
-.title {
-  margin-top: 350px;
-  margin-bottom: 200px;
-}
-
-.subtitle {
-  font-size: 1rem;
-  font-weight: 700;
-  color: rgb(119, 119, 119);
-}
-
 h1 {
   /* Cancel the default <h1> decoration */
   margin: 0;
   font-size: unset;
   font-weight: unset;
 
-  font-size: 4rem;
+  width: 100svw;
+  height: 100svh;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  font-size: 3.5rem;
   line-height: 1;
   font-weight: 700;
 
-  margin-bottom: 40px;
+  text-align: center;
+
+  background: linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
